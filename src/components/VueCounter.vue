@@ -1,7 +1,7 @@
 <template>
   <div id="vue" class="counter">
-      <button @click="state.increasePopulation">one up</button>
-      <h1>{{ state.bears }} around here ...</h1>
+      <button @click="increasePopulation">one up</button>
+      <h1>{{ bears }} around here ...</h1>
   </div>
 </template>
 
@@ -12,10 +12,11 @@ import { store } from '../store';
 export default {
   setup() {
     const useStore = create(store);
-    const state = useStore();
+    const { bears, increasePopulation } = useStore();
 
     return {
-      state
+      bears,
+      increasePopulation
     }
   }
 }
