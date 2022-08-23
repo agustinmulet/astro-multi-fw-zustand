@@ -7,7 +7,7 @@ export default function SolidCounter() {
   const state = useStore();
 
   return (
-    <div id="solid" class="counter">
+    <div id="solid">
       <button onClick={state.increasePopulation}>one up</button>
       <h1>{state.bears} around here ...</h1>
     </div>

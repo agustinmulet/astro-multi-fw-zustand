@@ -8,7 +8,7 @@ export default function ReactCounter() {
   const increasePopulation = useStore(state => state.increasePopulation);
 
   return (
-    <div id="react" className="counter">
+    <div id="react">
       <button onClick={increasePopulation}>one up</button>
       <h1>{bears} around here ...</h1>
     </div>

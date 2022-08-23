@@ -8,7 +8,7 @@ export default function PreactCounter() {
   const increasePopulation = useStore(state => state.increasePopulation);
 
   return (
-    <div id="preact" className="counter">
+    <div id="preact">
       <button onClick={increasePopulation}>one up</button>
       <h1>{bears} around here ...</h1>
     </div>

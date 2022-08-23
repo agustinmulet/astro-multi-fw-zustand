@@ -1,5 +1,5 @@
 <template>
-  <div id="vue" class="counter">
+  <div id="vue">
       <button @click="increasePopulation">one up</button>
       <h1>{{ bears }} around here ...</h1>
   </div>
